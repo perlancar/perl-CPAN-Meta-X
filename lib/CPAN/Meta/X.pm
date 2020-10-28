@@ -16,12 +16,24 @@ time, some keys are being used for their specific purposes. This document tries
 to list them.
 
 This document also lists custom phases and relationships in the
-L<prereqs|CPAN::Meta::Spec/PREREQUISITES> hash that are being used.
+L<prereqs|CPAN::Meta::Spec/PREREQUISITES> hash that are being used, custom
+keys in L<resources|CPAN::Meta::Spec/resources> hash.
 
 
 =head1 LIST OF CUSTOM DISTRIBUTION METADATA KEYS
 
-=head2 x_contributors
+=head2 x_Dist_Zilla key
+
+A big structure recording information related to L<Dist::Zilla> which presumably
+is used to build the current distribution. Some of the things being put in here
+include: perl version used to build the distribution, Dist::Zilla plugins used
+to build the distribution, and so on.
+
+
+=head2 x_authority key
+
+
+=head2 x_contributors key
 
 List of contributors in a release.
 
@@ -38,10 +50,29 @@ References:
 =back
 
 
-=head2 x_deprecated
+=head2 x_deprecated key
 
 
-=head2 x_provides_scripts
+=head2 x_examples key
+
+List prerequisites for example scripts.
+
+References:
+
+=over
+
+=item * KENTNL, L<https://perlancar.wordpress.com/2016/12/28/x_-prereqs/>
+
+=back
+
+
+=head2 x_generated_by_perl key
+
+
+=head2 x_help_wanted key
+
+
+=head2 x_provides_scripts key
 
 List what scripts are being provided in the distribution. The structure is
 modeled after the standard L<provides|CPAN::Meta::Spec/provides> hash.
@@ -67,6 +98,15 @@ References:
 =back
 
 
+=head2 x_spdx_expression key
+
+
+=head2 x_serialization_backend key
+
+
+=head2 x_static_install key
+
+
 =head1 LIST OF CUSTOM PREREQS PHASES
 
 =head2 x_benchmarks phase
@@ -82,33 +122,6 @@ References:
 =back
 
 
-=head2 x_Dist_Zilla
-
-A big structure recording information related to L<Dist::Zilla> which presumably
-is used to build the current distribution. Some of the things being put in here
-include: perl version used to build the distribution, Dist::Zilla plugins used
-to build the distribution, and so on.
-
-
-=head2 x_authority
-
-
-=head2 x_examples
-
-List prerequisites for example scripts.
-
-References:
-
-=over
-
-=item * KENTNL, L<https://perlancar.wordpress.com/2016/12/28/x_-prereqs/>
-
-=back
-
-
-=head2 x_generated_by_perl
-
-
 =head2 x_mentions phase
 
 Express that the current distribution is mentioning the specified module.
@@ -120,12 +133,6 @@ References:
 =item * PERLANCAR, L<https://perlancar.wordpress.com/2016/12/28/x_-prereqs/>
 
 =back
-
-
-=head2 x_spdx_expression
-
-
-=head2 x_serialization_backend
 
 
 =head2 x_spec phase
@@ -140,9 +147,6 @@ References:
 =item * PERLANCAR, L<https://perlancar.wordpress.com/2016/12/28/x_-prereqs/>
 
 =back
-
-
-=head2 x_static_install
 
 
 =head1 LIST OF CUSTOM PREREQS RELATIONSHIPS
@@ -160,6 +164,20 @@ See L</"x_mentions phase">.
 =head1 x_spec relationship
 
 See L</"x_spec phase">.
+
+
+=head1 LIST OF CUSTOM RESOURCES
+
+=head2 x_IRC resource
+
+
+=head2 x_identifier resource
+
+
+=head2 x_mailinglist resource
+
+
+=head2 x_wiki resource
 
 
 =head1 SEE ALSO
