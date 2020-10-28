@@ -151,17 +151,17 @@ References:
 
 =head1 LIST OF CUSTOM PREREQS RELATIONSHIPS
 
-=head1 x_benchmarks relationship
+=head2 x_benchmarks relationship
 
 See L</"x_benchmarks phase">.
 
 
-=head1 x_mentions relationship
+=head2 x_mentions relationship
 
 See L</"x_mentions phase">.
 
 
-=head1 x_spec relationship
+=head2 x_spec relationship
 
 See L</"x_spec phase">.
 
