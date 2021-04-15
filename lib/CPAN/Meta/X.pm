@@ -11,13 +11,18 @@ package CPAN::Meta::X;
 =head1 DESCRIPTION
 
 L<The CPAN distribution metadata specification|CPAN::Meta::Spec> allows custom
-keys (those that begin with C<x_> or C<X_>) to be added to the metadata. Over
-time, some keys are being used for their specific purposes. This document tries
-to list them.
+keys (those that begin with C<x_> or C<X_>) to be added to the metadata. This
+document tries to catalog the custom keys that are being used by CPAN authors.
 
-This document also lists custom phases and relationships in the
-L<prereqs|CPAN::Meta::Spec/PREREQUISITES> hash that are being used, custom
-keys in L<resources|CPAN::Meta::Spec/resources> hash.
+In addition to custom metadata keys, this document also lists:
+
+=over
+
+=item * custom phases and relationships in the L<prereqs|CPAN::Meta::Spec/PREREQUISITES> hash that are being used by people
+
+=item * custom keys in L<resources|CPAN::Meta::Spec/resources> hash
+
+=back
 
 
 =head1 LIST OF CUSTOM DISTRIBUTION METADATA KEYS
@@ -38,6 +43,8 @@ to build the distribution, and so on.
 List of contributors in a release.
 
 Examples:
+
+TBD
 
 References:
 
@@ -74,8 +81,8 @@ References:
 
 =head2 x_provides_scripts key
 
-List what scripts are being provided in the distribution. The structure is
-modeled after the standard L<provides|CPAN::Meta::Spec/provides> hash.
+List scripts that are being provided in the distribution. The structure is
+modelled after the standard L<provides|CPAN::Meta::Spec/provides> hash.
 
 Examples:
 
