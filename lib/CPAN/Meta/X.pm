@@ -11,7 +11,7 @@ package CPAN::Meta::X;
 =head1 DESCRIPTION
 
 L<The CPAN distribution metadata specification|CPAN::Meta::Spec> allows custom
-keys (those that begin with C<x_> or C<X_> to be added to the metadata. Over
+keys (those that begin with C<x_> or C<X_>) to be added to the metadata. Over
 time, some keys are being used for their specific purposes. This document tries
 to list them.
 
