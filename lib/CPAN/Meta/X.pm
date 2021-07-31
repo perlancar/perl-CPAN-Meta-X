@@ -6,7 +6,7 @@ package CPAN::Meta::X;
 # VERSION
 
 1;
-# ABSTRACT: List of custom (x_*) keys in CPAN distribution metadata being used in the wild
+# ABSTRACT: Custom (x_*) keys in CPAN distribution metadata being used in the wild
 
 =head1 DESCRIPTION
 
@@ -25,7 +25,7 @@ In addition to custom metadata keys, this document also lists:
 =back
 
 
-=head1 LIST OF CUSTOM DISTRIBUTION METADATA KEYS
+=head1 CUSTOM DISTRIBUTION METADATA KEYS
 
 =head2 x_Dist_Zilla key
 
@@ -114,7 +114,7 @@ References:
 =head2 x_static_install key
 
 
-=head1 LIST OF CUSTOM PREREQS PHASES
+=head1 CUSTOM PREREQS PHASES
 
 =head2 x_benchmarks phase
 
@@ -156,7 +156,7 @@ References:
 =back
 
 
-=head1 LIST OF CUSTOM PREREQS RELATIONSHIPS
+=head1 CUSTOM PREREQS RELATIONSHIPS
 
 =head2 x_benchmarks relationship
 
@@ -173,7 +173,7 @@ See L</"x_mentions phase">.
 See L</"x_spec phase">.
 
 
-=head1 LIST OF CUSTOM RESOURCES
+=head1 CUSTOM RESOURCES
 
 =head2 x_IRC resource
 
