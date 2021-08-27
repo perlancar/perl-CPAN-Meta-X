@@ -151,6 +151,25 @@ References:
 See L</"x_benchmarks phase">.
 
 
+=head2 x_features_from relationship
+
+Express that one of the modules in the current distribution is declaring
+features that are defined defined in an associated C<Module::Features::*>
+module. Used with (phase=develop).
+
+Examples: L<Text::ANSITable>, L<Text::Table::More>, and L<Text::Table::Sprintf>
+declares features defined by L<Module::Features::TextTable> so they add a
+dependency (phase=develop, rel=x_features_from) to
+L<Module::Features::TextTable>.
+
+References:
+
+=over
+
+=item * L<Module::Features> specification
+
+=back
+
 =head2 x_mentions relationship
 
 See L</"x_mentions phase">.
