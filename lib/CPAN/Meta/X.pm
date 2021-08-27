@@ -1,3 +1,5 @@
+# no code
+## no critic: TestingAndDebugging::RequireUseStrict
 package CPAN::Meta::X;
 
 # AUTHORITY
@@ -142,20 +144,6 @@ References:
 =back
 
 
-=head2 x_spec phase
-
-Express that the current distribution is following a specification defined in
-the specified module.
-
-References:
-
-=over
-
-=item * PERLANCAR, L<https://perlancar.wordpress.com/2016/12/28/x_-prereqs/>
-
-=back
-
-
 =head1 LIST OF CUSTOM PREREQS RELATIONSHIPS
 
 =head2 x_benchmarks relationship
@@ -190,3 +178,5 @@ See L</"x_spec phase">.
 =head1 SEE ALSO
 
 L<CPAN::Meta::Spec> - Specification for CPAN distribution metadata
+
+L<CPAN::Meta::X::Old>
