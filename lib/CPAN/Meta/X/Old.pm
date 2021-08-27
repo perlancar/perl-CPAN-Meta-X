@@ -8,17 +8,17 @@ package CPAN::Meta::X::Old;
 # VERSION
 
 1;
-# ABSTRACT: List of custom (x_*) keys in CPAN distribution metadata being used in the wild (old/deprecated)
+# ABSTRACT: Custom (x_*) keys in CPAN distribution metadata being used in the wild (old/deprecated)
 
 =head1 DESCRIPTION
 
 This is the historical companion for L<CPAN::Meta::X>.
 
 
-=head1 LIST OF OLD CUSTOM DISTRIBUTION METADATA KEYS
+=head1 OLD CUSTOM DISTRIBUTION METADATA KEYS
 
 
-=head1 LIST OF OLD CUSTOM PREREQS PHASES
+=head1 OLD CUSTOM PREREQS PHASES
 
 =head2 x_spec phase
 
@@ -35,10 +35,10 @@ References:
 =back
 
 
-=head1 LIST OF OLD CUSTOM PREREQS RELATIONSHIPS
+=head1 OLD CUSTOM PREREQS RELATIONSHIPS
 
 
-=head1 LIST OF OLD CUSTOM RESOURCES
+=head1 OLD CUSTOM RESOURCES
 
 
 =head1 SEE ALSO
