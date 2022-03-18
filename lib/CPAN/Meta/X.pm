@@ -131,6 +131,19 @@ References:
 =back
 
 
+=head2 x_lists phase
+
+Express that the current distribution is including the specified module in some
+list(s), e.g. an L<Acme::CPANModules> list.
+
+References:
+
+=over
+
+=item * PERLANCAR, L<Dist::Zilla::Plugin::Acme::CPANModules>
+
+=back
+
 =head2 x_mentions phase
 
 Express that the current distribution is mentioning the specified module.
@@ -169,6 +182,10 @@ References:
 =item * L<Module::Features> specification
 
 =back
+
+=head2 x_lists relationship
+
+See L</"x_lists phase">.
 
 =head2 x_mentions relationship
 
