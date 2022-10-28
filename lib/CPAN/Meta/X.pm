@@ -8,7 +8,7 @@ package CPAN::Meta::X;
 # VERSION
 
 1;
-# ABSTRACT: Custom (x_*) keys in CPAN distribution metadata being used in the wild
+# ABSTRACT: Catalog of custom (x_*) keys in CPAN distribution metadata being used in the wild
 
 =head1 DESCRIPTION
 
