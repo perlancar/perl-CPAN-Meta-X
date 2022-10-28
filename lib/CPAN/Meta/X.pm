@@ -167,7 +167,7 @@ Example: L<Perinci::Access::Lite> distribution specifies a runtime C<x_alt_for>
 prereq relationship to L<Perinci::Access>.
 
 IDEA: The more specific nature of alternate could be specified further in
-additional relationsip e.g. C<x_lightweight_alt_for>, C<x_tiny_alt_for>,
+additional relationship e.g. C<x_lightweight_alt_for>, C<x_tiny_alt_for>,
 C<x_windows_alt_for>, etc, if needed.
 
 =head2 x_benchmarks relationship
