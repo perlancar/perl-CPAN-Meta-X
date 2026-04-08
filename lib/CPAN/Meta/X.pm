@@ -39,6 +39,68 @@ to build the distribution, and so on.
 
 =head2 x_authority key
 
+Identify the person or organization responsible for the release and/or
+maintenance of the distribution. Usually contains a URI. The following schemes
+have been seen:
+
+=over
+
+=item * cpan
+
+Format:
+
+ cpan:PAUSEID
+
+=item * github
+
+Formats:
+
+ github:USERNAME            # actually insufficient data to locate the exact file that might contain $VERSION or distribution metadata
+ github:URL
+
+=item * gitlab
+
+Formats:
+
+ github:USERNAME            # actually insufficient data to locate the exact file that might contain $VERSION or distribution metadata
+ github:URL
+
+=item * corp
+
+Sometimes used in a private distribution.
+
+Formats:
+
+ corp:SOMENAME
+
+=item * company
+
+Sometimes used in a private distribution.
+
+Formats:
+
+ company:SOMENAME
+
+=item * darkpan
+
+Format:
+
+ darkpan:URL
+
+Examples:
+
+ darkpan:/some/path
+ darkpan:file:/some/path
+ darkpan:https://github.com/USERNAME/REPO/raw/refs/heads/master
+ darkpan:https://www.cpan.org/
+
+Used by me (PERLANCAR). Specify that a CPAN-like mirror is the authority.
+Version and distribution metadata can be looked up by first retrieving
+C<URL>/modules/02packages.details.txt.gz> file, parsing it, then retrieving the
+distribution archive specified in it.
+
+=back
+
 
 =head2 x_contributors key
 
